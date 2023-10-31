@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    min-height: 30px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 40px;
+}
+nav h1{
+    font-size: 30px;
+    padding-left: 60px;
+}
+.tooltip-text{
+    visibility: hidden;
+    position: relative;
+    border: 2px solid red;
+}
+.tooltip:hover .tooltip-text{
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    visibility: visible;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+nav > ul{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 60px;
+}
+ nav>ul>li>a:hover{
+    border : 2px solid slateblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: aqua;
+    font-size: 35px;
+}
+nav > ul > li{
+    list-style: none;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
